@@ -1,0 +1,405 @@
+/* Estilos para la parte superior izquierda */
+
+header div {
+    position: fixed;
+    top: 6px;
+    left: 10px;
+    color: #042940;
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
+/* Estilos para el menu en la parte superior derecha */
+
+#menu-superior {
+    position: fixed;
+    top: 3px;
+    right: 10px;
+    display: flex;
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 1.2em;
+    list-style: none;
+    text-shadow: -0.8px -0.8px 0 #000, 0.8px -0.8px 0 #000, -0.8px 0.8px 0 #000, 0.8px 0.8px 0 #000;
+    font-weight: normal;
+    z-index: 2;
+}
+
+#menu-superior a {
+    color: #D6D58E;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Estilos para la navegacion lateral */
+
+#navegacion-lateral {
+    position: fixed;
+    top: 0px; 
+    right: 10px;
+    height: 100%;
+    width: 25%;
+    background-color: #005c53;
+    list-style: none;
+    overflow-y: auto;
+    padding: 2%;
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+#navegacion-lateral a {
+    position: relative;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#navegacion-lateral a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    width: 90%;
+    height: 2px;
+    background-color: #ffffff3f;
+}
+
+/* Estilo general parrafos */
+
+p {
+    font-size: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Estilos para la clase .main */
+
+.main {
+    width: 70%;
+    height: auto;
+    display: flexbox;
+    text-align: justify; 
+    background-color: #D6D58E;
+}
+
+/* Estilos para la seccion inicio */
+
+.main #inicio {
+    text-align: center;
+    display: block;
+    margin-bottom: 200px;
+}
+
+#inicio img {
+    width: 80%;
+    height: auto;
+}
+
+/* Estilos para la seccion equipo */
+
+.main #equipo {
+    margin-bottom: 200px;
+    width: 100%; 
+    height: auto; 
+}
+
+#equipo h2, h3, img {
+    text-align: center;
+    line-height: 2;
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+#equipo h3 {
+    margin-bottom: 20px;
+}
+
+/* Estilos para la seccion jugadores */
+
+#jugadores {
+    margin-bottom: 200px;
+    text-align: center;
+    display: block;
+}
+
+#jugadores img {
+    width: 20%;
+    height: auto;
+}
+
+/* Estilos para la sección de torneo */
+
+#torneo h2, #torneo h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 2;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.contenedor {
+    width: 100%;
+    height: 150px;
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+}
+
+#torneo .p1 {
+    width: 50%;
+    text-align: justify;
+    line-height: 1.5;
+    display: flex;
+}
+
+#torneo .img1 {
+    justify-content: right;
+    width: 50%;
+    height: auto;
+    margin: 15px 5px 0px 0px;
+}
+
+#torneo .p2 {
+    width: 100%;
+    text-align: center;
+    line-height: 2;
+    margin: 2px 2px;
+}
+
+#torneo .img2 {
+   width: 80%;
+   height: auto;
+}
+
+/* Estilos para la sección de blog */
+
+#blog {
+    width: 100%;
+}
+
+#blog h2 {
+    margin-top: 200px;
+    text-align: center;
+    line-height: 2;
+}
+
+#blog .texto {
+    width: 50%;
+}
+
+.video1 {
+    margin-left: 10px;
+    display: flex;
+}
+
+#blog .enlace {
+    width: 50%;
+    margin-top: 20px;   
+}
+
+.enlace iframe {
+    width: 100%;
+    height: 100%;  
+}
+
+.video2  {
+    margin-left: 10px;
+    display: flex;
+}
+
+/* Estilos para la seccion contacto */
+
+#contacto h2 {
+    margin-top: 200px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#contacto {
+    height: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+label {
+    width: 400px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+  
+input {
+    width: 400px; 
+    text-align: left;
+}
+  
+#escribenos {
+    height: 10em; 
+}
+  
+input[type="submit"] {
+    width: 100px;
+    text-align: center;
+    align-self: center
+}
+
+/* Estilos para el footer */
+
+.footer {
+    width: 70%;
+    background: #D6D58E;
+    color: #005C53;
+}
+
+.footer h4, .footer p {
+    margin: 0 auto;
+}
+
+/* Reglas Media Query */
+
+
+@media(min-width: 480px) {
+    #menu-superior {
+        font-size: 0.7em;
+        
+     }
+    #menu-superior a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 5px;
+        }
+    #navegacion-lateral {
+        font-size: 1.2em;
+      }
+    #navegacion-lateral a {
+        color: #D6D58E;
+     }
+    p {
+        font-size: 14px;
+    }
+    #inicio h1 {
+        margin-top: 125px;
+    }
+    #equipo h2 {
+        margin-top: 220px;
+    }
+    img {
+        border-radius: 10px;
+    }
+    #jugadores h2 {
+        margin-top: 220px;
+    }
+    #torneo .p1 {
+        line-height: 1.1;
+    }
+    #torneo .img1 {
+        height: 100px;
+    }
+    #blog {
+        width: 95%;
+    }
+    .video1, .video2 {
+        display: block;
+    }
+    #blog .texto {
+        width: 100%;
+    }
+    .enlace iframe {
+        width: 300px;
+        height: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    #contacto h3 {
+        margin-bottom: 20px;
+    }
+    label {
+        width: 200px;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    input {
+        width: 200px; 
+        text-align: left;
+    }
+        
+}
+
+@media(min-width: 768px) {
+    #inicio h1 {
+        margin-top: 50px;
+    }
+    img {
+        border-radius: 20px;
+    }
+    #menu-superior a {
+        font-size: 16px;
+    }
+    #navegacion-lateral a {
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+    }
+    #blog {
+        width: 100%;
+    }
+    .video1, .video2 {
+        display: flex;
+    }
+    #blog .texto {
+        width: 50%;
+    }
+    .enlace iframe {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    .texto {
+        margin-right: 10px;
+    }
+    #contacto h3 {
+        margin-bottom: 20px;
+    }
+    label {
+        width: 400px;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    input {
+        width: 400px; 
+        text-align: left;
+    }   
+}
+
+@media(min-width: 1024px) {
+    #navegacion-lateral a {
+        font-size: 24px;
+        color: #D6D58E
+    }
+    #menu-superior a {
+        font-size: 18px;
+    }
+    #inicio h1 {
+        margin-top: 10px;
+    }
+    img {
+        border-radius: 25px;
+    }
+    p {
+        font-size: 18px;
+    }  
+}
